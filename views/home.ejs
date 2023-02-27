@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <%- include('./components/navbar.ejs') %>
+    <section class="categories">
+        <% categories.map(data => {%>
+            <a href=""><%= data.title  %></a>
+        <% }) %>
+    </section>
+    <section class="images">
+        <% videos.map(data => {%>
+            <div class="list">
+                <!-- <img src=<%= data.image %> alt=""> -->
+                <video src=<%= data.image %> type="video/mp4"  muted  controls class="vid" loop style="border:solid;" ></video>
+                <h1><%= data.title %></h1>
+                <h3><%= data.channel %></h3>
+            </div>
+        <% }) %>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 30px;
+}
+.navbar input{
+    width: 500px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar button{
+    padding: 5px 10px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(57, 57, 192);
+    border: 1px solid grey;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.navbar button:hover{
+    background-color: rgb(215, 237, 244);
+    cursor: pointer;
+}
+.categories{
+    padding: 0px 30px;
+}
+.categories a{
+    text-decoration: none;
+    color: black;
+    width: auto;
+    border: 0px solid grey;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(250, 246, 246);
+    margin: 2px 12px;
+    font-size: 18px;
+    transition: 0.8s;
+}
+.categories a:hover{
+    background-color: rgb(218, 205, 205);
+}
+.list{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 28px;
+    text-align: center;
+    transition: 1s;
+    border-radius: 10px;
+    border-color: gray;
+}
+.list:hover{
+    transform:scale(1.2);
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.videos{
+    padding: 30px;
+    /* display: inline-block; */
+}
+.list video{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+.list img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
